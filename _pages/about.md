@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
@@ -13,7 +13,7 @@ profile:
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Software Engineer with 7+ years of experience in designing, developing and maintaining a HIPAA and SOC 2 complaint industry leading electronic documentation, reporting and communication software (SaaS). Throughout this journey, I have been working with mostly Java and JVM based technologies for high availability and highly scalable enterprise software development using Agile (Scrum, Kanban) development methodologies. My current expertise lies in designing, developing and deploying Spring and JEE based applications in WebLogic and Oracle Middleware environment, JVM (HotSpot) performance tuning and Database optimizations.
+I am a Senior Software Engineer with 7+ years of experience in designing, developing and maintaining a HIPAA and SOC 2 complaint industry leading electronic documentation, reporting and communication software (SaaS). Throughout this journey, I have been working with mostly Java and JVM based technologies for high availability and highly scalable enterprise software development using Agile (Scrum, Kanban) development methodologies. My current expertise lies in designing, developing and deploying Spring and JEE based applications in WebLogic and Oracle Middleware environment, JVM (HotSpot) performance tuning and Database optimizations.
 
 Being a Computer Science major and former competitive programmer, I also possess thorough understanding of Algorithm Designing & Problem Solving, Data Structures, Database Systems, Operating System Internals, Software Design Patterns, Computer Architecture, Compilers, Distributed Systems, Computer Network & Security etc.
 

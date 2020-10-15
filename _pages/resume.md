@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /teaching/
-title: Teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Resume
+permalink: /resume/
+description: Resume
 nav: true
 ---
 
