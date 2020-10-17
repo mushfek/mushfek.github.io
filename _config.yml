@@ -2,11 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Mushfekur Rahman | Portfolio # the website title (if blank, full name will be used instead)
+title: Mushfekur Rahman | About # the website title (if blank, full name will be used instead)
 first_name: Mushfekur
 middle_name:
 last_name: Rahman
 email: rahman.mushfek@gmail.com
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -49,7 +51,7 @@ blogger_url: # your blogger URL
 stackoverflow_url: https://stackoverflow.com/users/2228484/mushfek0001
 
 contact_note: >
-  Please try any of the above if you want to reach out!
+  These are my web footprints in case you're looking to connect!
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
