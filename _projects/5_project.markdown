@@ -23,7 +23,7 @@ In a vulnerable situation, one can ask for help by clicking a button (call+sms+l
 6. Raise Awareness / Share experience through safe & secure network
 A community feed where users can discuss between them in various issue / raise awareness against common problems they faced regularly.
 
-My contribution was to develop an awareness portal where users could post and discuss any incident and share knowledge. Full source code is available in Github.
+My contribution was to develop an awareness portal where users could post and discuss any incident and share knowledge. Full source code is available in [Github](https://github.com/mushfek/national-hackathon-2014).
 
 Screenshot of user interface:
 <div class="row">

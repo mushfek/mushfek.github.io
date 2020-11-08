@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Distributed File Sharing System
-description: A P2P distributed file sharing system based on Google File System
+description: A distributed file sharing system based on Google File System
 img: /assets/img/gfs.png
 importance: 1
 ---

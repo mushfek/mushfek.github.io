@@ -4,74 +4,111 @@ title: Huffman File Compressor
 description: A simple file compressor/decompressor based on Huffman coding algorithm
 img: /assets/img/huffman_tree.png
 importance: 6
+github: https://github.com/mushfek/huffman-compression
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This software was developed as a part of Algorithm Design Lab final project. Source code is available on [Github](https://github.com/mushfek/huffman-compression).
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### Algorithm Analysis
+Huffman compression is based on huffman coding technique. The huffman coding creates an optimal binary tree that is constructed based on frequency of an item/character in a file.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
+Let's take an example of a file or string containing data like "AAABBCAAADDFFAAAADCCCDAADDDAAACGAAACACA"
 ```
+character     frequency
+    A             20
+    B              2
+    C              7
+    D              7
+    F              2
+    G              1
+```
+The above following data will generate a binary tree starting from the characters having the lowest frequency, and construct till we use all the characters as follows:
+
+```
+Pass 1:
+(A, 20) (C, 7) (D, 7) (B, 2) (F, 2) (G, 1)                      (A, 20) (C, 7) (D, 7) (**, 3)  (B, 2)   
+                                                   =>                                  /   \
+                                                                                      /     \
+                                                                                   (F, 2) (G, 1)
+
+Pass 2:
+(A, 20) (C, 7) (D, 7) (**, 3)  (B, 2)                           (A, 20) (C, 7) (D, 7) (**, 5)
+                       /   \                                                           /   \
+                      /     \                                                         /     \
+                   (F, 2) (G, 1)                   =>                              (**, 3) (B, 2)
+                                                                                    /   \
+                                                                                   /     \
+                                                                                (F, 2) (G, 1)
+
+Pass 3:
+(A, 20) (C, 7) (D, 7) (**, 5)                                    (A, 20) (C, 7) (**, 12)
+                       /   \                                                     /   \
+                      /     \                                                   /     \
+                   (**, 3) (B, 2)                  =>                        (D, 7) (**, 5)
+                    /   \                                                            /   \
+                   /     \                                                          /     \
+                 (F, 2) (G, 1)                                                   (**, 3) (B, 2)
+                                                                                  /   \
+                                                                                 /     \
+                                                                              (F, 2) (G, 1)
+                                                                              
+Pass 4:
+(A, 20) (**, 12) (C, 7)                                           (A, 20) (**, 19)
+          /   \                                                             /   \
+         /     \                                                           /     \
+      (D, 7) (**, 5)                                                   (**, 12) (C, 7)
+              /   \                                                      /   \
+             /     \                               =>                   /     \
+          (**, 3) (B, 2)                                            (D, 7) (**, 5)
+           /   \                                                            /   \
+          /     \                                                          /     \
+       (F, 2) (G, 1)                                                    (**, 3) (B, 2)
+                                                                         /   \
+                                                                        /     \
+                                                                     (F, 2) (G, 1)
+                                                                     
+Pass 5 (Final), with huffman code:
+
+Left Branch denoting 0 and right 1
+
+(A, 20) (**, 19)                                                         (**, 39)
+          /   \                                                           /   \
+         /     \                                                      (0)/     \(1)
+     (**, 12) (C, 7)                                          [0] <= (A, 20) (**, 19)
+       /   \                                                                 /   \
+      /     \                                                            (0)/     \(1)
+  (D, 7) (**, 5)                                    =>                  (**, 12) (C, 7) => [11]
+          /   \                                                          /   \
+         /     \                                                     (0)/     \(1)
+     (**, 3) (B, 2)                                        [100] <= (D, 7) (**, 5)
+      /   \                                                                 /   \
+     /     \                                                               /     \(1)
+  (F, 2) (G, 1)                                                        (**, 3) (B, 2) => [1011]
+                                                                        /   \
+                                                                    (0)/     \(1)
+                                                         [10100] <= (F, 2) (G, 1) => [10101]
+                                                         
+Final Huffman Codes:
+character     frequency       Huffman Codes       Actual Binary
+    A             20                  0             01000001
+    B              2               1011             01000010
+    C              7                 11             01000011
+    D              7                100             01000100
+    F              2              10100             01000110
+    G              1              10101             01000111
+__________________________________________________________________
+                  39                 75                  312
+```
+Hence the resultant data is stored as binary written as '0001011101100010010010100101000000100111111100001001001000001110101000110110*00000*', which has 75 bits
+plus 5 digits appended to round off the remaining bits while storing in the file.
+
+
+### To Run
+```
+g++ huffman.cpp
+[a.exe | ./a.out] -c|-dc [filename_to_be_compressed] 
+(The order must be same: first: option to compress/decompress and then second: filename)
+```
+The file to be compressed will generate a file with extension '.abiz', which is the compressed file and the output file which will be the uncompressed version of '.abiz' file.
+
+N.B. When using this program for compressing files other than ASCII based text files (e.g., audio (.mp3), video (.mp4), pdfs, document (.doc/.docx), etc.) may not result in any reduced size as this compresses files assuming that the file consists of ASCII character streams and not binary data. Images and videos are usually already compressed files using specialized algorithms.
