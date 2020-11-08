@@ -23,6 +23,10 @@ nav: true
 * **BUBT CSE Fiesta 2010**. Rank: Honorable Mention (Team: DU Hello World).
 * **CSEDU Intra-Batch Programming Contest 2009**. Rank: **7<sup>th</sup>**.
 
-##### Courses
+##### Independent Coursework
+<hr>
+To be added.
+
+##### University Coursework
 <hr>
 To be added.

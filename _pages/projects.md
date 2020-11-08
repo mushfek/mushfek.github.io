@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Curated List of Projects (Academic and Competition)
 nav: true
 ---
 
