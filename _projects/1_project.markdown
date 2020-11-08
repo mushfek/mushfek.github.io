@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: /assets/img/12.jpg
+title: Distributed File Sharing System
+description: A P2P distributed file sharing system based on Google File System
+img: /assets/img/gfs.png
 importance: 1
 ---
 

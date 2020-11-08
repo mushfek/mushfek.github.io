@@ -2,13 +2,13 @@
 layout: page
 title: Academics
 permalink: /academics/
-description: Academic Degrees and Achievements
+description: Academic Degrees, Achievements and Certifications
 nav: true
 ---
 
 ##### BSc in Computer Science & Engineering (2009 - 2013)
 <hr>
-**CGPA**: 3.58 (Top 10%) \
+**CGPA**: 3.58 (3.65 in last 2 years) \
 **University of Dhaka, Bangladesh** \
 **Co-curricular Activities & Societies**: Algorithmic problem solving and competitive programming (ICPC), Software Development Contests, Hackathons.
 

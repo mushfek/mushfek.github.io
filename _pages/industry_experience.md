@@ -10,10 +10,9 @@ nav: true
 Therap BD Ltd. (Jul 2018 - Current)
 <hr>
 * Developed a file transfer framework based on [Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/patterns/messaging) to streamline file transfer between Therap server and SFTP servers (external systems). The framework provides higher level of abstraction and easier APIs for developers to use.
-* Planned and developed Salesforce Live Chat integration project as a technical lead.
-* Imported issues generated overSalesforce side using REST APIs and developed a data sync mechanism between both side.  Tech Stack:  Spring,JEE, Salesforce REST API, OAuth 2.0.
+* Developed a system to import issue generated over Salesforce side using REST APIs and a data sync mechanism between both side. Tech Stack:  Spring,JEE, Salesforce REST API, OAuth 2.0.
 * Designed and developed Therap Issue Tracking application to collect user reported issues. Simplified the workflow and improved issue searching infrastructure for faster search results. Tech Stack: Spring, JEE, Oracle RDBMS.
-* Designed and developed Telephony integration (IVR) with Therap Electronic Visit Verification (EVV) system. Designed HATEOAS driven REST APIs for it. Tech Stack:  Spring, PlumVoice Fuse+ IVR.
+* Designed and developed Telephony integration (IVR) with Therap Electronic Visit Verification (EVV) system. Designed HATEOAS driven REST APIs for it. Tech Stack: Spring, PlumVoice Fuse+ IVR.
 * Performed various R&D work for development tools (e.g. static code analyzers, application profiling and performance monitoring tools, web application security analysis etc.) that have potential usage in Therap.
 * Member of core code reviewer panel for both web application and mobile (Android and iOS) platform. Ensuring best practices for design patterns, code quality and maintainability.
 

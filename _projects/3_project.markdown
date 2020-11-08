@@ -1,10 +1,9 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: /assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
+title: Rubic's Cube Simulator in OpenGL
+description: A simple Rubic's Cube simulator in OpenGL
+img: /assets/img/rubics_cube.jpg
+importance: 5
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: /assets/img/3.jpg
+title: Simple C Compiler w/ Flex and Bison
+description: Toy compiler for a subset of C language
+img: /assets/img/simple_compiler.png
 importance: 2
 ---
 

@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
-description: Research Works
+description: Academic Research & Industry R&D Works
 nav: true
 ---
 

@@ -1,31 +1,24 @@
 ---
 layout: page
-title: Prottoyee
-description: An Android application to help prevent sexual harassment in Bangladesh
-img: /assets/img/prottoyee/prottoyee-appicon.png
-importance: 8
-github: https://github.com/mushfek/national-hackathon-2014
+title: Distributed Mutual Exclusion Simulator
+description: A demonstration of three most common distributed mutual exclusion algorithms (e.g. centralized, election and token ring
+img:
+importance: 6
 ---
 
-This application was developed in National Hackathon 2014 to solve one of the most pervasive national problems, Sexual Harassment.
+Every project has a beautiful feature showcase page.
+It's easy to include images in a flexible 3-column grid format.
+Make your photos 1/3, 2/3, or full width.
 
-The application has multiple modules:
-1. Anonymous Authenticated Identification System
-An authentication/identification system so reporter will be anonymous in the network & communication but higher applicable authority will able to know her identity so can provide support.
-2. Report crime (to applicable higher authority)
-This is a simple message-based system where women can report a crime / harassment she experienced to the applicable authority.
-3. Crowd sourced Heatmap/Area reporting
-In a map, one can point a location where she were victim of eve-teasing or harassment.
-4. Ask for Counseling
-User can ask for counseling/advice to trained counselor hiding her identity
-5. One click Urgent Help
-In a vulnerable situation, one can ask for help by clicking a button (call+sms+location information will go directly to preset persons) 
-6. Raise Awareness / Share experience through safe & secure network
-A community feed where users can discuss between them in various issue / raise awareness against common problems they faced regularly.
+To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
-My contribution was to develop an awareness portal where users could post and discuss any incident and share knowledge. Full source code is available in Github.
+    ---
+    layout: page
+    title: project
+    description: a project with a background image
+    img: /assets/img/12.jpg
+    ---
 
-Screenshot of user interface:
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
