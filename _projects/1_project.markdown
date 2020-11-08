@@ -6,72 +6,18 @@ img: /assets/img/gfs.png
 importance: 1
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This software was developed as the course final project of Distributed Systems Lab.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+It was a conceptual implementation of a distributed file sharing system based on the GFS research paper. 
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The system has two clients and a metadata server (M-server) to emulate a distributed file system. The program was extensible for any number of servers and clients. The file system has one directory and a number of text files in that directory. A file in this file system can be of any size. However, a file is logically divided into chunks, with each chunk being at most 8192 bytes (8 kilobytes) in size. Chunks of files in the filesystem are actually stored as Linux files on the three servers. All the chunks of a given file need not be on the same server. In essence, a file in this filesystem is a concatenation of multiple Linux files. If the total size of a file in this file system is 8 x + y kilobytes, where y < 8 , then the file is made up of x + 1 chunks, where the first x chunks are of size 8 kilobytes each, while the last chunk is of size y kilobytes.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+For example, a file namedfilexmay be of length 20 kilobytes, and be made up of three chunks: the first chunk of size 8 kilobytes stored in serverS 1 with local file nameABC, the second chunk of size 8 kilobytes stored in server S 3 with local file nameDEF, and the third chunk of size 4 kilobytes stored in serverS 2 with local file nameGHI.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+In steady state, the M-server maintains the following metadata about files in the file system: file name, names of Linux files that correspond to the chunks of the file, which server hosts which chunk, when was a chunk to server mapping last updated.
 
+Initially, the M-server does not have the chunk name to server mapping, nor does it have the corresponding time of last mapping update. Every 5 seconds, the servers send heartbeat messages to the M-server with the list of Linux files they store. The M-server uses these heartbeat messages to populate/update the metadata. If the M-server does not receive a heartbeat message from a server for 15 seconds, the M-server assumes that the server is down and none of its chunks is available.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Clients wishing to create a file, read or append to a file in the file system send their request (with the name of the file) to the M-server. If a new file is to be created, the M-server randomly asks one of the servers to create the first chunk of the file, and adds an entry for that file in its directory. For read and append operations, based on the file name and the offset, the M-server determines the chunk, and the offset within that chunk where the operation has to be performed, and sends the information to the client. Then, the client directly contacts the corresponding server and performs the operations.
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
+In effect, clients and servers communicate with each other to exchange data, while the clients and servers commu- nicate with the M-server to exchange metadata. The maximize amount of data that can be appended at a time is assumed 2048 bytes. If the current size of the last chunk of the file, where the append operation is to be performed, isSsuch that 8192 − S < appended data size then the rest of that chunk is padded with a null character, a new chunk is created and the append operation is performed there.
