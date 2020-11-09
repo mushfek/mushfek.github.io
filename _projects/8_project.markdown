@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Simple C Compiler w/ Flex and Bison
-description: An intermediate code generator for a subset of C language by Back-Patching
-img: /assets/img/simple_compiler.png
-importance: 2
+title: Smart Contacts
+description: A simple iOS application to manage and sync all your contacts from phone and social media
+img: /assets/img/ios_logo.png
+importance: 9
 ---
 
 Every project has a beautiful feature showcase page.

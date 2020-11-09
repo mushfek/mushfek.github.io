@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Simple C Compiler w/ Flex and Bison
-description: An intermediate code generator for a subset of C language by Back-Patching
-img: /assets/img/simple_compiler.png
-importance: 2
+title: Linux Kernel Programming - Character device driver 
+description: A simple character device driver implemented for Linux System Programming Lab project
+img: /assets/img/linux_kernel.png
+importance: 10
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Smart Contacts
-description: A simple iOS application to manage and sync all your contacts from phone and social media
-img: /assets/img/ios_logo.png
-importance: 9
+title: Unix Shell and ls command
+description: A simple Unix shell with ls command (file information lister) developed for Operating System Course project
+img: /assets/img/linux_shell.png
+importance: 10
 ---
 
 Every project has a beautiful feature showcase page.
