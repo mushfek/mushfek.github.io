@@ -9,23 +9,22 @@ github: https://github.com/mushfek/national-hackathon-2014
 
 This application was developed in National Hackathon 2014 to solve one of the most pervasive national problems, Sexual Harassment.
 
+My contribution was to develop a social media like awareness portal where users could post and discuss any incident and share knowledge.
+
+Full source code is available in [Github](https://github.com/mushfek/national-hackathon-2014).
+
 The application has multiple modules:
-1. Anonymous Authenticated Identification System
-An authentication/identification system so reporter will be anonymous in the network & communication but higher applicable authority will able to know her identity so can provide support.
-2. Report crime (to applicable higher authority)
-This is a simple message-based system where women can report a crime / harassment she experienced to the applicable authority.
-3. Crowd sourced Heatmap/Area reporting
-In a map, one can point a location where she were victim of eve-teasing or harassment.
-4. Ask for Counseling
-User can ask for counseling/advice to trained counselor hiding her identity
-5. One click Urgent Help
-In a vulnerable situation, one can ask for help by clicking a button (call+sms+location information will go directly to preset persons) 
-6. Raise Awareness / Share experience through safe & secure network
-A community feed where users can discuss between them in various issue / raise awareness against common problems they faced regularly.
+1. **Anonymous Authenticated Identification System**: An authentication/identification system so reporter will be anonymous in the network & communication but higher applicable authority will able to know her identity so can provide support.
 
-My contribution was to develop a social media like awareness portal where users could post and discuss any incident and share knowledge. 
+2. **Report crime (to applicable higher authority)**: This is a simple message-based system where women can report a crime / harassment she experienced to the applicable authority.
 
-<strong>Full source code is available in [Github](https://github.com/mushfek/national-hackathon-2014).</strong>
+3. **Crowd sourced Heatmap/Area reporting**: In a map, one can point a location where she were victim of eve-teasing or harassment.
+
+4. **Ask for Counseling**: User can ask for counseling/advice to trained counselor hiding her identity
+
+5. **One click Urgent Help**: In a vulnerable situation, one can ask for help by clicking a button (call+sms+location information will go directly to preset persons)
+ 
+6. **Raise Awareness / Share experience through safe & secure network**: A community feed where users can discuss between them in various issue / raise awareness against common problems they faced regularly. 
 
 Screenshot of user interface:
 <div class="row">
