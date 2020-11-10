@@ -19,6 +19,6 @@ My work here includes researching, designing, and developing Java and JVM-driven
 
 I completed my undergraduate studies (BSc) in Computer Science & Engineering from [The Department of CSE](http://www.cse.du.ac.bd/) of The University of Dhaka in 2013. During my academic years, I was also involved in International Collegiate Programming Contests ([ICPC](https://icpc.global/)) and various software development competitions where I competed in several national level contests and secured top positions.
 
-My current research interests include **Software Engineering**, **Parallel & Distributed Systems**, **High-Performance Computing**, **Networking & Information Security**, **Data Science & Machine Learning**.
+My current research interests include **Software Engineering**, **Parallel & Distributed Systems**, **High-Performance Computing**, **Networking & Information Security**, and **Machine Learning**.
 
 So, if you have an interesting problem that can be solved by Computation, feel free to reach out. I’d love to discuss and brainstorm!

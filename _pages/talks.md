@@ -20,7 +20,7 @@ Delivered this talk in Therap TechSession (2020)
 <br>
 
 ### Do You Really Get Classloaders? 
-<strong>Disclaimer</strong>: I did not prepare this slide. I presented this topic in a local tech conference using this nicely prepared slides by the good people of RebelLabs. Courtesy goes to them!
+<strong>Disclaimer</strong>: I did not prepare this slide. I presented this topic at a local tech conference using this nicely prepared slides by the good people of RebelLabs. Courtesy goes to them!
 <object data="/assets/pdf/do-you-really-get-classloaders.pdf" type="application/pdf" width="100%" height="485">
 </object>
 <br>

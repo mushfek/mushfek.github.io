@@ -6,6 +6,16 @@ description: Academic Research & Industry R&D Works
 nav: true
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+<div class="post">
+  <ul class="post-list">
+    {% assign sorted_researches = site.researches | sort: "index" %}
+    {% for research in sorted_researches %}
+      <li>
+        <h3><a class="post-title" style="text-decoration:underline" href="{{ research.url | prepend: site.baseurl }}">{{ research.title }}</a></h3>
+        <p>{{ research.description }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  
+  {% include pagination.html %}
+</div>
