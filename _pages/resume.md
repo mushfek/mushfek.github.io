@@ -2,7 +2,7 @@
 layout: page
 title: Resume
 permalink: /resume/
-description: Resume
+description: Academic Resume
 nav: true
 ---
 

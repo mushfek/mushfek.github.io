@@ -48,5 +48,5 @@ nav: true
 To be added.
 <hr>
 
-<h5><u>University Coursework</u></h5>
+<h5><u>Undergraduate Coursework</u></h5>
 To be added.
