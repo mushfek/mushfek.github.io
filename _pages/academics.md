@@ -7,7 +7,7 @@ nav: true
 ---
 
 <h5><u>BSc in Computer Science & Engineering (2009 - 2013)</u></h5>
-**CGPA**: 3.58 (3.65 in last 2 years) \
+**CGPA**: 3.58 (Top 10% and 3.65 in last 2 years) \
 **University of Dhaka, Bangladesh** \
 **Co-curricular Activities & Societies**: Algorithmic problem solving and competitive programming (ICPC), Software Development Contests, Hackathons.
 <hr>
