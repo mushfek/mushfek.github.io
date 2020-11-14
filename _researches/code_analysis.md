@@ -2,7 +2,7 @@
 layout: post
 title: Web Application Security and Code Quality Analysis with Static Code Analyzers
 index: 3
-description: Used multiple open source and proprietary static code analysis tools (Sonarqube, Checkstyle, PMD, FindBugs/SpotBugs) on the full codebase of multiple platforms (Web, Android, iOS) to detect potential vulnerabilities (OWASP Top 10 Security Vulnerabilities). Later fixed those findings using Pareto Principle (80% of consequences come from 20% of the causes) which fixed more than 95% of the reported issues. 
+description: Used multiple open source and proprietary static code analysis tools (Sonarqube, Checkstyle, PMD, FindBugs/SpotBugs) on the codebase of multiple platforms (Web, Android, iOS) to detect potential vulnerabilities (OWASP Top 10 Security Vulnerabilities). Later fixed those findings using Pareto Principle (80% of consequences come from 20% of the causes) which fixed more than 95% of the reported issues. 
 ---
 
 <h5><u>Abstract</u></h5>
@@ -99,7 +99,14 @@ SonarQube presents it's findings in a report like this:
 <h5><u>Results</u></h5>
 The tools generated a lot of warnings and suggestions. Fixing everything at once didn’t seem like the way to go as all these fixes had to be tested again and will involve a lot of development and testing resources. Later we came to know about a study conducted by Microsoft where they found that: **80% of the errors and crashes in Windows and Office were caused by 20% of the entire pool of bugs detected**.
                                                        
-We opted for the same strategy which is known as Pareto Principle or 80-20 rule and decided to fix top 10% of the reported issues at first. That fixed roughly 80% of the codebase issues and then we went for the next 10% which removed 95% of what we started with initially. Hence, that study conducted by Microsoft seemed valid. 
+We opted for the same strategy which is known as Pareto Principle or 80-20 rule and decided to fix top 10% of the reported issues at first. That fixed roughly 80% of the codebase issues and then we went for the next 10% which removed 95% of what we started with initially. Hence, that study conducted by Microsoft seemed valid.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pareto_principle.png' | relative_url }}" alt="" title="SonarQube Report"/>
+    </div>
+</div>
+<br>
 
 <h5><u>Conclusion</u></h5>
 Finally, we established a **Quality Profile** in SonarQube like the following:
