@@ -53,5 +53,6 @@ The work was divided into two teams: I used a Random Forest classifier and a Neu
 Our implementation differentiated sleep from wake with an accuracy of 90% and a specificity (true wake epochs scored correctly) of 60% (when at the 93% sensitivity threshold). Therefore, our results are similar to previously reported performance of actigraphy and in line with past work validating consumer wearable devices that estimate sleep with proprietary algorithms. Our contribution also considers the diversification of the test subjects where MESA dataset came from a demographics that is significantly different than the data generated from the devices from the developers and testers.
 
 <h5><u>References</u></h5>
-[1] [Brain Basics: Understanding Sleep](https://www.ninds.nih.gov/disorders/patient-caregiver-education/understanding-sleep)
-[2] []
+1.  [Brain Basics: Understanding Sleep](https://www.ninds.nih.gov/disorders/patient-caregiver-education/understanding-sleep)
+2. Olivia Walch1,*, Yitong Huang2, Daniel Forger3 and Cathy Goldstein; Sleep stage prediction with raw acceleration and photoplethysmography heart rate data derived from a consumer wearable device 
+3. Agarwal R, Gotman J. Digital tools in polysomnography. J Clin Neurophysiol 2002;19(April (2)):136–43.
