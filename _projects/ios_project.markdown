@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Smart Contacts
-description: A simple iOS application to manage and sync all your contacts from phone and social media
+description: An iOS application to manage and sync all your contacts from phone and social media
 img: /assets/img/ios_logo.png
 importance: 11
 github: https://github.com/mushfek/smartcontacts

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Usage Pattern Classifier From User Activities and Application Logging Events
+title: Usage Pattern Classifier From User Activities and Application Logging Events (Ongoing)
 index: 1
 description: Current ongoing R&D project. The system aims to get insights from user logs and system generated events to understand frequently site visit pattern. This data will be useful in future to optimize the user interface and to make the user experience more seamless. 
 ---
@@ -13,7 +13,3 @@ Hence, a system which can recognise and group common and effective usage pattern
 <h5><u>Experiments</u></h5>
 
 <h5><u>Experimentation Details and Setup</u></h5>
-
-<h5><u>Results</u></h5>
-
-<h5><u>Future Enhancements</u></h5>

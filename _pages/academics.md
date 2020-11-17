@@ -6,7 +6,7 @@ description: Academic Degrees, Achievements and Certifications
 nav: true
 ---
 
-<h5><u>BSc (Honours) in Computer Science & Engineering (2009 - 2013)</u></h5>
+<h5><u>BSc (Honours) in Computer Science & Engineering (2008 - 2013)</u></h5>
 **CGPA**: 3.58 (3.65 in last 2 years) \
 **University of Dhaka, Bangladesh** \
 **Co-curricular Activities & Societies**: Algorithmic problem solving and competitive programming (ICPC), Software Development Contests, Hackathons.

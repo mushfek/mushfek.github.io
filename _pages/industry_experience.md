@@ -18,7 +18,7 @@ Therap BD Ltd. (Jul 2018 - Current)
 
 ##### Software Engineer II
 Therap BD Ltd. (Jul 2016 - Jun 2018)
-* Migrated and redesigned legacy Therap Secure Communication codebase using newer frameworks to match with newer standards and better user experience. Optimized data structure, queries, improved UI and JS plugins which reduced page loading time up to ten times. Tech Stack: Spring, JEE, Bootstrap.
+* Migrated and redesigned legacy Therap Secure Communication (SComm) codebase using newer frameworks to match with newer standards and better user experience. Optimized data structure, queries, improved UI and JS plugins which reduced page loading time up to ten times. Tech Stack: Spring, JEE, Bootstrap.
 * Updated Excel Reporting Framework to use newer format (.xlsx) and added support for streaming excel building/reading to handle very large amounts of data in a memory efficient way. This change reduced generated file size up to 30% and resulted in a faster response time. Tech Stack: Spring, JEE, Apache POI.
 * Organized a Java web app development contest “Therap JavaOne” for university students to inspire future Java programmers. Designed and developed user activity tracking system for the web app which was developed for initial screening of the contestants. Tech Stack: Spring, JEE, JMS, AWS (EC2, RDS).
 <hr>
