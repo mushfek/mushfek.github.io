@@ -13,7 +13,7 @@ profile:
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Software Engineer and R&D specialist currently working as a Senior Software Engineer in the System Architecture Team of [Therap Services, LLC](https://www.therapservices.net/), a [HIPAA](https://www.hhs.gov/hipaa/index.html) and [SOC 2<sup>®</sup>](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc2report.html) complaint industry-leading US-based electronic health records and associated functionality provider platform.
+I am a Software Engineer and R&D specialist currently working as a Senior Software Engineer in the System Architecture Team of [Therap Services](https://www.therapservices.net/), a [HIPAA](https://www.hhs.gov/hipaa/index.html) and [SOC 2<sup>®</sup>](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc2report.html) complaint industry-leading US-based electronic health records and associated functionality provider platform.
 
 My work here includes researching, designing, and developing Java and JVM-driven highly available, scalable, and distributed software solutions for both web and mobile platforms (iOS, Android). I'm also involved in various R&D projects on software optimization metrics (**Security & Threat Analysis**, **Performance**, **Extensibility**, **Maintainability** etc.) and leading the technical aspects of Software Development Lifecycle. Being one of the members of core code review team, I review other developers code and design principles to ensure highest of the industry standards.  
 
