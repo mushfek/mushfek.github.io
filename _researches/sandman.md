@@ -43,7 +43,7 @@ To make trained classifiers backwards compatible with historical data collection
 
 <strong>Feature #3: Circadian Rhythm</strong>
 
-In this feature we tried to approximate the changing drive of the circadian clock to sleep over the course of the night. The clock-proxy feature was determined by two sep- arate ways. The first way was to use a fixed cosine wave, shifted relative to the time of recording start, which rose and fell over the course of the night. This way of computing the clock proxy term is attractive because it only requires the time of recording as an input. 
+In this feature we tried to approximate the changing drive of the circadian clock to sleep over the course of the night. This feature was determined by two separate ways. The first way was to use a fixed cosine wave, shifted relative to the time of recording start, which rose and fell over the course of the night. This way of computing the clock proxy term is attractive because it only requires the time of recording as an input. 
 
 <strong>Training and Testing using MESA dataset</strong>
 
