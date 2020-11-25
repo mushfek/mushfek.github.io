@@ -6,13 +6,24 @@ description: Academic Degrees, Achievements and Certifications
 nav: true
 ---
 
+<style type="text/css">
+  .embed-responsive {
+      position: relative;
+      display: block;
+      height: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+</style>
+
 <h5><u>BSc (Honours) in Computer Science & Engineering (2008 - 2013)</u></h5>
 **CGPA**: 3.58 (3.65 in last 2 years) \
 **University of Dhaka, Bangladesh** \
 **Co-curricular Activities & Societies**: Algorithmic problem solving and competitive programming (ICPC), Software Development Contests, Hackathons.
 <hr>
 
-<h5><u>Language Proficiency (IELTS Academic)</u></h5>
+<h5><u>Language Proficiency (IELTS Academic)</u> <a target="_blank" href="{{ '/assets/pdf/Mushfekur_Rahman_IELTS.pdf' }}"><i class="fa fa-external-link-alt"></i></a></h5>
+
 <table class="table">
     <thead>
         <th scope="col">Overall</th>
@@ -55,4 +66,13 @@ nav: true
 <hr>
 
 <h5><u>Undergraduate Coursework</u></h5>
-To be added.
+Scanned copy of undergraduate transcript (apologies for the terrible quality).
+
+<div class='embed-responsive' style='padding-bottom:130%'>
+    <object data="/assets/pdf/Mushfekur_Rahman_BSc_Transcript.pdf" type="application/pdf" width="100%" height="100%">
+        <p>
+            It appears you don't have a PDF plugin for this browser.
+            You can <a href="/assets/pdf/Mushfekur_Rahman_BSc_Transcript.pdf">click here to download the PDF file.</a>
+        </p>
+    </object>
+</div>
