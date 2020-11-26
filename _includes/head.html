@@ -33,6 +33,16 @@
 
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | relative_url }}">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C4383F7YQG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C4383F7YQG');
+</script>
+
 <!-- Theming-->
 {% if site.enable_darkmode %}
   <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
