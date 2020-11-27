@@ -22,7 +22,7 @@ nav: true
 **Co-curricular Activities & Societies**: Algorithmic problem solving and competitive programming (ICPC), Software Development Contests, Hackathons.
 <hr>
 
-<h5><u>Language Proficiency (IELTS Academic)</u> <a target="_blank" href="{{ '/assets/pdf/Mushfekur_Rahman_IELTS.pdf' }}"><i class="fa fa-external-link-alt"></i></a></h5>
+<h5><u>Language Proficiency (IELTS Academic)</u> <a target="_blank" href="{{ '/assets/pdf/Mushfekur_Rahman_IELTS_Report.pdf' }}"><i class="fa fa-external-link-alt"></i></a></h5>
 
 <table class="table">
     <thead>
