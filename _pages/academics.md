@@ -66,7 +66,7 @@ nav: true
 <hr>
 
 <h5><u>Undergraduate Coursework</u></h5>
-Scanned copy of undergraduate transcript (apologies for the terrible quality).
+Scanned copy of undergraduate transcript.
 
 <div class='embed-responsive' style='padding-bottom:130%'>
     <object data="/assets/pdf/Mushfekur_Rahman_BSc_Transcript.pdf" type="application/pdf" width="100%" height="100%">
