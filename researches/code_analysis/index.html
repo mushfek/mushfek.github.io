@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Mushfekur  Rahman | Web Application Security and Code Quality Analysis with Static Code Analyzers</title>
+<meta name="description" content="Official website of Mushfekur Rahman showcasing his works, education, and accomplishments.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/researches/code_analysis/">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C4383F7YQG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C4383F7YQG');
+</script>
+
+<!-- Theming-->
+
+
+    
+<!-- MathJax -->
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+<!--      <a class="navbar-brand title font-weight-lighter" href="/">-->
+<!--       <span class="font-weight-bold">Mushfekur</span>   Rahman-->
+<!--      </a>-->
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li>
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/academics/">
+                Academics
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/industry-experience/">
+                Industry Experience
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                Projects
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/research/">
+                Research
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/resume/">
+                Resume
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/talks/">
+                Talks
+                
+              </a>
+          </li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Web Application Security and Code Quality Analysis with Static Code Analyzers</h1>
+    <p class="post-meta"></p>
+  </header>
+
+  <article class="post-content">
+    <h5><u>Abstract</u></h5>
+<p>Security and software quality is becoming more and more important these days. Code reviewing process are also being automated to optimise developers time and ensure less human intervention for early detection of design or security flaws in the development phase. Static code analysers play a significant role in this area and detect some of these flaws such as SQL injection, some potential runtime failures (dereferencing a null pointer), cross site scripting, and simple logical inconsistencies (a control flow which will always be unreachable) etc.</p>
+
+<p>While the idea of such a system sounds amazing in theory, reality often becomes too complicated as static code analysers operate on a fixed set of rules most of the time and real-life projects usually have their own structure depending on the problem they intend to solve. Hence, the inception of multiple static code analysers (e.g. FindBugs/SpotBugs, PMD, Checkstyle etc) which offers their own set of rules and advantages.</p>
+
+<p>In this experiment, we attempted to run three of the most prominent open source static code analysers (SpotBugs, PMD: Programming Mistake Detector, Checkstyle) for a web application and an android application which essentially rely on the web app for APIs. Next, we used a proprietary platform called <a href="https://www.sonarqube.org/">SonarQube</a> to analyse the same codes and integrated the system into the <strong>Continuous Integration</strong> pipeline so that each pull request gets evaluated before human review and set up a standard <em>Quality Profile</em> to ensure all the code going to production pass these basic criteria.</p>
+
+<h5><u>Test Environment Setup</u></h5>
+<p>The web application codebase had the following technology and code distribution:</p>
+<pre>
+---------------------------------------------------------------------------------
+Language                       files          blank        comment           code
+---------------------------------------------------------------------------------
+Java                            7273         225902          62468         826657
+Freemarker Template              543          29784           8649         226932
+JavaScript                       446          40997          35331         205241
+JSP                             1092          19627           3257         167284
+CSS                              217           4790           2076         114812
+XSLT                             491           9867             95         114590
+SQL                              786           8722           2916          59462
+XML                              348           7474           1220          50838
+TypeScript                         3            564           1208          24570
+XHTML                            116           2382            232          14385
+LESS                              44           2306            743           9992
+SVG                               14              0              2           3364
+HTML                              15              4            259           1824
+Sass                              14             34             34           1768
+Gradle                            41            222             14           1382
+JSON                               8              0              0           1121
+XSD                                1              7              0            747
+Bourne Shell                      11            123             85            286
+Markdown                           4             49              0            114
+---------------------------------------------------------------------------------
+SUM:                           11467         352854         118589        1825369
+---------------------------------------------------------------------------------
+</pre>
+
+<p>The codebase for the android application:</p>
+<pre>
+--------------------------------------------------------------------------------
+Language                      files          blank        comment           code
+--------------------------------------------------------------------------------
+Java                            330           7993           1823          29458
+XML                             175           1647            136           8345
+JSON                              2              0              0            330
+Gradle                            3             30              3            167
+Bourne Again Shell                1             19             20            121
+DOS Batch                         1             24              2             64
+Markdown                          1              8              0             11
+--------------------------------------------------------------------------------
+SUM:                            513           9721           1984          38496
+-------------------------------------------------------------------------------- 
+</pre>
+
+<p>Our primary build tool was gradle and all the tools that we used had corresponding gradle plugin to integrate with the project.
+<a href="https://spotbugs.github.io/">SpotBugs</a> (formerly FindBugs) is a plugin based tool. For each type of technology one has to configure a plugin. Like most bug-detection tools based on static analysis, FindBugs issues some warnings that do not correspond to real bugs. So we had to take those into account.</p>
+
+<h5><u>Experiments and Implementation</u></h5>
+<p>While SpotBugs offer analysis on various categories such as bad practice, malicious code vulnerability, correctness, performance, security, dodgy code, experimental, multithreaded correctness and internationalisation.
+Analyzing and fixing everything at once was a mammoth task hence we looked for the <a href="https://owasp.org/www-project-top-ten/">OWASP Top 10 Web Application Security Risks</a></p>
+
+<p>That provided us with a clear goal towards what to aim for at first and following five seemed to contribute most to the overall technical debt of the project:</p>
+<ol>
+  <li>Bad Practice</li>
+  <li>Malicious Code</li>
+  <li>Vulnerability</li>
+  <li>Security</li>
+  <li>Performance</li>
+</ol>
+
+<p>We decided to start with these five at first and later expand into more specialised cases like correctness, multithreaded correctness and so on.</p>
+
+<p>Later, we integrated two more tools <a href="https://pmd.github.io/">PMD</a> and <a href="https://github.com/checkstyle/checkstyle">Checkstyle</a> where we mostly focused on finding bad practices.</p>
+
+<p>The analysis coverage spectrum looked like this:</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/coverage_spectrum.png" alt="" title="SonarQube Report" />
+    </div>
+</div>
+<p>Note: This and all other images used here are collected from Google as the codebase used for the experiment is subject to proprietary software product and not publishable for business reasons.</p>
+
+<p>Finally, we moved onto the proprietary platform called SonarQube. SonarQube offers both a deployable product and a SaaS (Software-as-a-Service) cloud. We went for the deployable product and installed in one of our test servers. Later, we integrated the SonarQube gradle plugin to our project to allow SonarQube analyze our code. 
+SonarQube presents it’s findings in a report like this:</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/sonar-report.png" alt="" title="SonarQube Report" />
+    </div>
+</div>
+<p><br /></p>
+
+<h5><u>Results</u></h5>
+<p>The tools generated a lot of warnings and suggestions. Fixing everything at once didn’t seem like the way to go as all these fixes had to be tested again and will involve a lot of development and testing resources. Later we came to know about a study conducted by Microsoft where they found that: <strong>80% of the errors and crashes in Windows and Office were caused by 20% of the entire pool of bugs detected</strong>.</p>
+
+<p>We opted for the same strategy which is known as Pareto Principle or 80-20 rule and decided to fix top 10% of the reported issues at first. That fixed roughly 80% of the codebase issues and then we went for the next 10% which removed 95% of what we started with initially. Hence, that study conducted by Microsoft seemed valid.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/pareto_principle.png" alt="" title="SonarQube Report" />
+    </div>
+</div>
+<p><br /></p>
+
+<h5><u>Conclusion</u></h5>
+<p>Finally, we established a <strong>Quality Profile</strong> in SonarQube like the following:</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/sonar_quality_gate.png" alt="" title="SonarQube Report" />
+    </div>
+</div>
+<p><br /></p>
+
+<p>This to ensure all the future codes will go through the same screening and will save a lot of time and effort in future as these bugs will be detected in a very early stage of development and over the time these technical debts will not pile up.</p>
+
+<h5><u>References</u></h5>
+<ol>
+  <li>V.  Okun,  R.  Gaucher,  and  P.E.  Black,  ”Static  analysis  tool  exposition(SATE) 2008, NIST Special Publication 500-279, June 2009.</li>
+  <li>G.  Diaz  and  J.  R.  Bermejo,  ”Static  analysis  of  source  code  security:assessment  of  tools  against  SAMATE  tests,”  Information  and  softwaretechnology 55 (2013) 1462-1476.</li>
+  <li>OWASP Top 10 Web Application Security Risks (https://owasp.org/www-project-top-ten/)</li>
+  <li><a href="https://link.springer.com/chapter/10.1007/978-3-642-22203-0_45">Application of 80/20 Rule in Software Engineering Rapid Application Development (RAD) Model</a></li>
+  <li>SpotBugs - Find bugs in Java program (https://spotbugs.github.io/)</li>
+  <li>PMD (https://pmd.github.io)</li>
+  <li>Checkstyle (https://github.com/checkstyle/checkstyle)</li>
+  <li>SonarQube (https://www.sonarqube.org/)</li>
+</ol>
+
+  </article>
+
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2020 Mushfekur  Rahman.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme (customized and modified upon necessity). Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Load DarkMode JS -->
+<script src="/assets/js/dark_mode.js"></script>
+
+
+</html>

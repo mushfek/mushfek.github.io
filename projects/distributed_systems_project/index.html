@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Mushfekur  Rahman | Mushfekur Rahman | About</title>
+<title>Mushfekur  Rahman | Distributed File Sharing System</title>
 <meta name="description" content="Official website of Mushfekur Rahman showcasing his works, education, and accomplishments.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/distributed_systems_project/">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4383F7YQG"></script>
@@ -166,56 +166,29 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>al-folio</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Distributed File Sharing System</h1>
+    <p class="post-description">A distributed file sharing system based on Google File System</p>
+  </header>
 
+  <article>
+    <p>This software was developed as the course final project of Distributed Systems Lab.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 29, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2015/comments/">a post with comments</a></h3>
-        <p class="post-meta">October 20, 2015</p>
-        <p>an example of a blog post with comments</p>
-      </li>
-    
-  </ul>
+<p>It was a conceptual implementation of a distributed file sharing system based on the <a href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf">Google File System</a>. Source code is available on <a href="https://github.com/mushfek/distributed-file-system">Github</a>.</p>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="Mushfekur Rahman | About">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="Mushfekur Rahman | About - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="Mushfekur Rahman | About - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<p>The implementation here simulates major components of GFS using n number of servers (indexing from 0 to n-1) and m number of clients (indexing from 0 to m-1). Communication between servers and clients were done using Java sockets.</p>
 
+<p>The file system has one directory and a number of text files in that directory. A file in this file system can be of any size. However, a file is logically divided into chunks, with each chunk being at most 8192 bytes (8 kilobytes) in size. 
+Chunks of files in the filesystem are actually stored as Linux files on the n servers. All the chunks of a given file need not be on the same server. In essence, a file in this filesystem is a concatenation of multiple Linux files. If the total size of a file in this file system is 8 x + y kilobytes, where y &lt; 8 , then the file is made up of x + 1 chunks, where the first x chunks are of size 8 kilobytes each, while the last chunk is of size y kilobytes.</p>
 
+<p>In future, I intend to develop a Java FX based GUI to ease the usage of the system. There are obviously a lot of improvements needed to me made such as:</p>
+<ol>
+  <li>Add a watcher/heartbeat server to monitor health of the file and metadata servers</li>
+  <li>A pub-sub based architecture to notify clients on any change in server</li>
+  <li>Add a centralized server discovery mechanism so that each time a new server instance is introduced, replication is done for fault-tolerance etc.</li>
+</ol>
+
+  </article>
 
 </div>
 

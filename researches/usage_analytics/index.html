@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Mushfekur  Rahman | Mushfekur Rahman | About</title>
+<title>Mushfekur  Rahman | An Intelligent and Unified Log Analytics Infrastructure (Ongoing)</title>
 <meta name="description" content="Official website of Mushfekur Rahman showcasing his works, education, and accomplishments.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/researches/usage_analytics/">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4383F7YQG"></script>
@@ -164,58 +164,56 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
 
-  <div class="header-bar">
-    <h1>al-folio</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">An Intelligent and Unified Log Analytics Infrastructure (Ongoing)</h1>
+    <p class="post-meta"></p>
+  </header>
+
+  <article class="post-content">
+    <h5><u>Abstract</u></h5>
+<p>Automating manual Operations work is a necessity these days as manual log parsing and checking is a pretty daunting task and human error can also lead to leaking sensitive data to the application logs that might have adverse effect on security, auditing, and might also contribute to additional vulnerabilities. Hence, having a tool that can automatically read and understand sensitive information from logs might be helpful in terms of both prompt action and the reduction of manual labour. Even though such a system might have false positives and times but in such case a false positive is less alarming than a false negative and therefore this makes it a very good case for utilising Natural Language Processing and Machine Learning based technologies to find insights from the logs. Furthermore, understanding user activity and site usage pattern is a very important for the system designers and developers not only for optimisation but also to ensure better user experience.In a large system this becomes even more important and gradually built-up systems may lose this focus. Hence, a system which can recognise and group common and effective usage pattern is a very useful tool and might improve the product in general.</p>
+
+<h5><u>Vision</u></h5>
+<p>The infrastructure is planned to have the following components:</p>
+<ol>
+  <li>Automated alerting system whenever sensitive data (PHI, HIPAA breach) is being leaked in the logs</li>
+  <li>Automated forwarding system to the corresponding dev/team whenever a fatal error occurs for a specific module</li>
+  <li>A Google Chat bot to pass build and merge instruction to CI/CD pipeline</li>
+  <li>A unified dashboard showing usage trends</li>
+  <li>Anomaly detection in Application usage</li>
+</ol>
+
+<h5><u>Data Collection</u></h5>
+<p>Logs are essentially a stream of events. We are collecting logs using an open source data collector and aggregator named <a href="https://www.fluentd.org/">Fluentd</a>.
+Fluentd can be used to collect, filter, split and aggregate logs from various sources such as access logs, application logs, system logs (syslogd) in a HA architecture 
+and then forwarding the logs in the desired format into an <a href="https://www.elastic.co/elasticsearch/">Elasticsearch</a> cluster. Elasticsearch allows storing and querying 
+as of the logs. For a backup the logs are also fed to a Hadoop Distributed File System (HDFS) cluster from where further analysis is conducted.</p>
+
+<h5><u>HIPAA based PHI De-identification Model</u></h5>
+<p>Our work is greatly influenced by the 2014 i2b2 (Informatics for Integrating Biology and the Bedside) De-identification Challenge Task where the task was to identify and extract various types of Protected Health Information (PHI) data from clinical free-texts and patient data forms. Later we want to remove or eliminate those sensitive information while keeping the logs otherwise intact.</p>
+
+<p>For the training and testing purpose we are using the open dataset provided by i2b2 consisting of 1304 medical records among which nearly 60% are being used for training and 40% for testing/validating. The PHI categories that we are considering are: Date, Name, Age, Phone, Contacts, IDs (SSN, Medicare/Medicaid), and Location.</p>
+
+<p>Our current plan consists of the following four steps:</p>
+<ol>
+  <li><strong>Pre-processing</strong>: In this phase, we are splitting the texts, tokenising and trying to obtain word lemmas.</li>
+  <li><strong>Feature extraction</strong>: We are extracting a wide variety of linguistic features both syntactic and word surface oriented, which attempt to characterise the semantics of HIPAA based PHI terms. We are trying to benchmark between multiple feature types such as token, contextual, orthographic, and task specific features.</li>
+  <li><strong>Model selection</strong>: We are designing a Machine Learning algorithm named Conditional Random Fields (CRF). Here, each token is being assigned one of the so-called BIO scheme tags: B (the first word of a PHI entity mention), I (inside an entity mention), O (outside, not in an entity mention). Several CRFs-based PHI classifiers are created, each of which is targeted for the sub-categories under one particular main PHI category.</li>
+  <li><strong>Post-processing</strong>: In this step the plan is to correct errors in PHI data or find more potential PHI candidates. In the training and testing dataset there are a lot of malformed data which might induce some bias towards the learning model. That should be corrected in this stage.</li>
+</ol>
+
+<h5><u>Reporting and Alerting</u></h5>
+<p>We are using <a href="https://www.elastic.co/kibana">Kibana</a> for creating an unified dashboard with charts and diagrams from the data 
+stored into the Elasticsearch.</p>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 29, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2015/comments/">a post with comments</a></h3>
-        <p class="post-meta">October 20, 2015</p>
-        <p>an example of a blog post with comments</p>
-      </li>
-    
-  </ul>
+  </article>
 
   
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="Mushfekur Rahman | About">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="Mushfekur Rahman | About - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="Mushfekur Rahman | About - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
 
 </div>
 

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Mushfekur  Rahman | Huffman File Compressor</title>
+<meta name="description" content="Official website of Mushfekur Rahman showcasing his works, education, and accomplishments.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/projects/algorithm_project/">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C4383F7YQG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C4383F7YQG');
+</script>
+
+<!-- Theming-->
+
+
+    
+<!-- MathJax -->
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+<!--      <a class="navbar-brand title font-weight-lighter" href="/">-->
+<!--       <span class="font-weight-bold">Mushfekur</span>   Rahman-->
+<!--      </a>-->
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li>
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/academics/">
+                Academics
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/industry-experience/">
+                Industry Experience
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                Projects
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/research/">
+                Research
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/resume/">
+                Resume
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/talks/">
+                Talks
+                
+              </a>
+          </li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Huffman File Compressor</h1>
+    <p class="post-description">A simple file compressor/decompressor based on Huffman coding algorithm</p>
+  </header>
+
+  <article>
+    <h3 id="algorithm-analysis">Algorithm Analysis</h3>
+<p>Huffman compression is based on huffman coding technique. The huffman coding creates an optimal binary tree that is constructed based on frequency of an item/character in a file.</p>
+
+<p>Let’s take an example of a file or string containing data like “AAABBCAAADDFFAAAADCCCDAADDDAAACGAAACACA”</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>character     frequency
+    A             20
+    B              2
+    C              7
+    D              7
+    F              2
+    G              1
+</code></pre></div></div>
+<p>The above following data will generate a binary tree starting from the characters having the lowest frequency, and construct till we use all the characters as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pass 1:
+(A, 20) (C, 7) (D, 7) (B, 2) (F, 2) (G, 1)                      (A, 20) (C, 7) (D, 7) (**, 3)  (B, 2)   
+                                                   =&gt;                                  /   \
+                                                                                      /     \
+                                                                                   (F, 2) (G, 1)
+
+Pass 2:
+(A, 20) (C, 7) (D, 7) (**, 3)  (B, 2)                           (A, 20) (C, 7) (D, 7) (**, 5)
+                       /   \                                                           /   \
+                      /     \                                                         /     \
+                   (F, 2) (G, 1)                   =&gt;                              (**, 3) (B, 2)
+                                                                                    /   \
+                                                                                   /     \
+                                                                                (F, 2) (G, 1)
+
+Pass 3:
+(A, 20) (C, 7) (D, 7) (**, 5)                                    (A, 20) (C, 7) (**, 12)
+                       /   \                                                     /   \
+                      /     \                                                   /     \
+                   (**, 3) (B, 2)                  =&gt;                        (D, 7) (**, 5)
+                    /   \                                                            /   \
+                   /     \                                                          /     \
+                 (F, 2) (G, 1)                                                   (**, 3) (B, 2)
+                                                                                  /   \
+                                                                                 /     \
+                                                                              (F, 2) (G, 1)
+                                                                              
+Pass 4:
+(A, 20) (**, 12) (C, 7)                                           (A, 20) (**, 19)
+          /   \                                                             /   \
+         /     \                                                           /     \
+      (D, 7) (**, 5)                                                   (**, 12) (C, 7)
+              /   \                                                      /   \
+             /     \                               =&gt;                   /     \
+          (**, 3) (B, 2)                                            (D, 7) (**, 5)
+           /   \                                                            /   \
+          /     \                                                          /     \
+       (F, 2) (G, 1)                                                    (**, 3) (B, 2)
+                                                                         /   \
+                                                                        /     \
+                                                                     (F, 2) (G, 1)
+                                                                     
+Pass 5 (Final), with huffman code:
+
+Left Branch denoting 0 and right 1
+
+(A, 20) (**, 19)                                                         (**, 39)
+          /   \                                                           /   \
+         /     \                                                      (0)/     \(1)
+     (**, 12) (C, 7)                                          [0] &lt;= (A, 20) (**, 19)
+       /   \                                                                 /   \
+      /     \                                                            (0)/     \(1)
+  (D, 7) (**, 5)                                    =&gt;                  (**, 12) (C, 7) =&gt; [11]
+          /   \                                                          /   \
+         /     \                                                     (0)/     \(1)
+     (**, 3) (B, 2)                                        [100] &lt;= (D, 7) (**, 5)
+      /   \                                                                 /   \
+     /     \                                                               /     \(1)
+  (F, 2) (G, 1)                                                        (**, 3) (B, 2) =&gt; [1011]
+                                                                        /   \
+                                                                    (0)/     \(1)
+                                                         [10100] &lt;= (F, 2) (G, 1) =&gt; [10101]
+                                                         
+Final Huffman Codes:
+character     frequency       Huffman Codes       Actual Binary
+    A             20                  0             01000001
+    B              2               1011             01000010
+    C              7                 11             01000011
+    D              7                100             01000100
+    F              2              10100             01000110
+    G              1              10101             01000111
+__________________________________________________________________
+                  39                 75                  312
+</code></pre></div></div>
+<p>Hence the resultant data is stored as binary written as ‘0001011101100010010010100101000000100111111100001001001000001110101000110110<em>00000</em>’, which has 75 bits
+plus 5 digits appended to round off the remaining bits while storing in the file.</p>
+
+<p>Source code is available on <a href="https://github.com/mushfek/huffman-compression">Github</a>.</p>
+
+<h3 id="to-run">To Run</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ huffman.cpp
+[a.exe | ./a.out] -c|-dc [filename_to_be_compressed] 
+(The order must be same: first: option to compress/decompress and then second: filename)
+</code></pre></div></div>
+<p>The file to be compressed will generate a file with extension ‘.abiz’, which is the compressed file and the output file which will be the uncompressed version of ‘.abiz’ file.</p>
+
+<p>N.B. When using this program for compressing files other than ASCII based text files (e.g., audio (.mp3), video (.mp4), pdfs, document (.doc/.docx), etc.) may not result in any reduced size as this compresses files assuming that the file consists of ASCII character streams and not binary data. Images and videos are usually already compressed files using specialized algorithms.</p>
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2020 Mushfekur  Rahman.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme (customized and modified upon necessity). Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Load DarkMode JS -->
+<script src="/assets/js/dark_mode.js"></script>
+
+
+</html>
